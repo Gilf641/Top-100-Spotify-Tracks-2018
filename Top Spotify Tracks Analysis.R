@@ -29,7 +29,7 @@ for (i in datacol){
 }
 #so there are no NA values
 
-#So we will to EDA with Artists as variable
+#So we will do EDA with Artists as variable
 str(unique(spotify_data$artists))
 #so there are 70 levels or artists in this dataset
 head(spotify_data)
@@ -134,9 +134,6 @@ Liveness<- spotify_data %>%
   coord_flip() +  geom_text(color = "Yellow", aes(label= artists, vjust = 0.1,hjust = 1))+
   labs(title = "Top25 LI", caption = "Liveness Index detects the presence of an audience in the recording", x= "Artist", y= "Liveness Index")
 Liveness
-#Post Malone v/s Drake
-
-new_spotify<- spotify_data %>% mutate()
 
 
 #what type of songs do spotify users listen the most
